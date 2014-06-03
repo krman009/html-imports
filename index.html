@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Trying html-imports in Google Chrome</title>
-  <link rel="import" href="import.html">
+  <link rel="import" href="import.html" onload="handleLoad(event)" onerror="handleError(event)">
 </head>
 <body>
   <div id="getting-started-info"></div>
   <script type="text/javascript">
+    // Thanks to http://www.html5rocks.com/en/tutorials/webcomponents/imports/
     var link = document.querySelector('link[rel="import"]');
 
     // Clone the <template> in the import.
@@ -15,6 +16,13 @@
     var clone = document.importNode(template.content, true);
 
     document.querySelector('#getting-started-info').appendChild(clone);
+
+    function handleLoad(e) {
+      console.log('Loaded import: ' + e.target.href);
+    }
+    function handleError(e) {
+      console.log('Error loading import: ' + e.target.href);
+    }
   </script>
 </body>
 </html>
