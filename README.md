@@ -1,5 +1,5 @@
-Getting started with `html-imports`
------------------------------------
+[Getting started with `html-imports`](http://krman009.github.io/html-imports/)
+------------------------------------------------------------------------------
 
 ![](https://raw.githubusercontent.com/krman009/html-imports/master/preview.PNG "Preview")
 
