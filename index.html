@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trying html-imports in Google Chrome</title>
+  <link rel="import" href="import.html">
+</head>
+<body>
+  <div id="getting-started-info"></div>
+  <script type="text/javascript">
+    var link = document.querySelector('link[rel="import"]');
+
+    // Clone the <template> in the import.
+    var template = link.import.querySelector('template');
+    var clone = document.importNode(template.content, true);
+
+    document.querySelector('#getting-started-info').appendChild(clone);
+  </script>
+</body>
+</html>
