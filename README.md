@@ -5,4 +5,4 @@
 
 + Create a server with whatever you want(like python, gulp, grunt etc.) and play with `index.html` and `import.html`
 
-> Note: Google Chrome supports it by enabling `chrome://flags/#enable-html-imports` flag.
+> Note: Google Chrome 35 supports it by enabling `chrome://flags/#enable-html-imports` flag, In Google Chrome 36, You don't have to enable the flag(flag is not there), because `html-imports` already supported in Google Chrome 36.
