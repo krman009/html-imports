@@ -1,8 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <title>Trying html-imports in Google Chrome</title>
+  
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="html, html imports, google chrome, opera">
+  
   <script async>
     function handleLoad(e) {
       console.log('Loaded import: ' + e.target.href);
@@ -11,10 +16,14 @@
       console.log('Error loading import: ' + e.target.href);
     }
   </script>
+  
   <link rel="import" href="import.html" onload="handleLoad(event)" onerror="handleError(event)">
+  
 </head>
 <body>
+
   <div id="getting-started-info"></div>
+  
   <script async>
     // Thanks to http://www.html5rocks.com/en/tutorials/webcomponents/imports/
     var link = document.querySelector('link[rel="import"]');
@@ -25,5 +34,6 @@
 
     document.querySelector('#getting-started-info').appendChild(clone);
   </script>
+  
 </body>
 </html>
