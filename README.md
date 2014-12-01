@@ -7,6 +7,8 @@
 
 > Note: In Chrome 35 and below(in which you found the flag) you've to enable the flag: [chrome://flags/#enable-html-imports](chrome://flags/#enable-html-imports), In Chrome 36, it's supported by default.
 
+------
+
 
 LICENSE
 -------
