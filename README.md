@@ -10,7 +10,7 @@
 ------
 
 
-LICENSE
+[LICENSE](https://github.com/krman009/html-imports/blob/master/LICENSE)
 -------
 
-[MIT](https://github.com/krman009/html-imports/blob/master/LICENSE)
+MIT (c) Kaushalya Mandaliya
